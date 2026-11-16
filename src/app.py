@@ -10,5 +10,12 @@ def index():
 
 @app.route("/increment", methods=["POST"])
 def increment():
+    "a"
     cnt.increase()
+    return redirect("/")
+
+@app.route("/reset", methods=["POST"])
+def reset():
+    "ada"
+    cnt.reset()
     return redirect("/")
